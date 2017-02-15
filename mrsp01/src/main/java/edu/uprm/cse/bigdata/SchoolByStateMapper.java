@@ -28,8 +28,8 @@ public class SchoolByStateMapper extends Mapper<LongWritable, Text, Text, IntWri
         // now emit the following key-pair: state, 1
         // state is the abreviation of the state
         // 1 is a counter just telling that for the given state, we found a record
-        Logger logger = LogManager.getRootLogger();
-        logger.trace("Map: " + state);
+        //Logger logger = LogManager.getRootLogger();
+        //logger.trace("Map: " + state);
         context.write(new Text(state), new IntWritable(1));
     }
 }

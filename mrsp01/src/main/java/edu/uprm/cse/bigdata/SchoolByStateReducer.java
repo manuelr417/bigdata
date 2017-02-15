@@ -30,8 +30,8 @@ public class SchoolByStateReducer extends Reducer<Text, IntWritable, Text, IntWr
         // emit key-pair: key, count
         // key is the abreviation for the state
         // count is the number of schools in the state
-        Logger logger = LogManager.getRootLogger();
-        logger.trace("Red: " + key.toString());
+        //Logger logger = LogManager.getRootLogger();
+        //logger.trace("Red: " + key.toString());
 
         context.write(key, new IntWritable(count));
     }
