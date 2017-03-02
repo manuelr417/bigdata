@@ -16,12 +16,12 @@ public class TwitterByScreenName {
 
     public static void main(String[] args) throws Exception {
         if (args.length != 2) {
-            System.err.println("Usage: CountSchoolByState <input path> <output path>");
+            System.err.println("Usage: TwitterByScreenName <input path> <output path>");
             System.exit(-1);
         }
         Job job = new Job();
         job.setJarByClass(edu.uprm.cse.bigdata.mrsp02.TwitterByScreenName.class);
-        job.setJobName("Count Schools");
+        job.setJobName("Count TweetsbyUsr");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
