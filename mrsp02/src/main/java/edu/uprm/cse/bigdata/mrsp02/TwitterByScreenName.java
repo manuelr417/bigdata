@@ -28,6 +28,7 @@ public class TwitterByScreenName {
 
         job.setMapperClass(edu.uprm.cse.bigdata.mrsp02.TwitterMapByScreenName.class);
         job.setReducerClass(edu.uprm.cse.bigdata.mrsp02.TwitterReduceByScreenName.class);
+        job.setCombinerClass(edu.uprm.cse.bigdata.mrsp02.TwitterReduceByScreenName.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
