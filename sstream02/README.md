@@ -12,10 +12,10 @@ That will install the necessary libraries.
 You will need to signup for Twitter, and then, use that account to register as Twitter Developer. 
 You will need to get 4 parameter values from your  developer account: 
 
-ACCESS_TOKEN 
-ACCESS_SECRET 
-CONSUMER_KEY 
-CONSUMER_SECRET
+ACCESS_TOKEN  
+ACCESS_SECRET  
+CONSUMER_KEY   
+CONSUMER_SECRET  
 
 ## Running the program
 You will need to put the 4 twitter parameters into a file named <code>credentials.json</code>. 
@@ -23,7 +23,7 @@ I have included a sample one, named <code>sample-credentials.json</code>. Rename
 
 Next, to runt the program simply type:
 
-<code> python readtweets<code>
+<code> python readtweets</code>
 
 You will start to see the tweets on the console. 
 
