@@ -37,14 +37,13 @@ def read_tweets(access_token, access_secret, consumer_key, consumer_secret):
         tweet_count -= 1
         # Twitter Python Tool wraps the data returned by Twitter
         # as a TwitterDictResponse object.
-        # We convert it back to the JSON format to print/score
-        #status = json.loads(str(tweet))
-        #print(status)
         try:
             # print screen_name and name
             print("TWEET: ", tweet['user']['screen_name'])
             # The command below will do pretty printing for JSON data, try it out
             print("TWEET JSON: ", json.dumps(tweet, indent=4))
+            # This next command, prints the tweet as a string
+            print ("TWEETS STRING", str(tweet))
         except:
             pass
 
