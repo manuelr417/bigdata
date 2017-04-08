@@ -32,12 +32,15 @@ if __name__ == "__main__":
 
     print ('Number of arguments: ', len(sys.argv), 'arguments.')
     print ('Argument List: ', str(sys.argv))
-    if len(sys.argv) != 3:
-        print("Usage: socketlistener01.py <hostname> <port>", file=sys.stderr)
+    if len(sys.argv) != 5:
+        print("Usage: spark-submit ./socketlistener01.py --master yarn <hostname> <port>", file=sys.stderr)
         exit(-1)
 
-    host = sys.argv[1]
-    port = sys.argv[2]
+    host = sys.argv[3]
+    port = sys.argv[4]
+
+    print("host: ", host)
+    print("port: ", port)
 
     # Setup spark configuration
     conf = SparkConf().setAppName("SocketWordCountYarn")
