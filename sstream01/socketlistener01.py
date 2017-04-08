@@ -29,6 +29,9 @@ from pyspark.streaming import StreamingContext
 import sys
 
 if __name__ == "__main__":
+
+    print ('Number of arguments:', len(sys.argv), 'arguments.')
+    print ('Argument List:', str(sys.argv))
     if len(sys.argv) != 3:
         print("Usage: socketlistener01.py <hostname> <port>", file=sys.stderr)
         exit(-1)
